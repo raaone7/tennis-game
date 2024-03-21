@@ -46,5 +46,12 @@ npm i pnpm -g
     npm run test
     ```
 
+## Steps to build and test 
+
+    pnpm build or npm run build
+    cd build
+    node index.js
+
+
 ## Authors
 [Ram Subramanian](https://github.com/raaone7)
