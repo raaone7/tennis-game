@@ -1,0 +1,36 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"files": {
+		"ignore": ["node_modules", "build", "docs"]
+	},
+	"formatter": {
+		"lineWidth": 100
+	},
+	"organizeImports": {
+		"enabled": false
+	},
+	"linter": {
+		"rules": {
+			"complexity": {
+				"useSimplifiedLogicExpression": "error",
+				"noBannedTypes": "error",
+				"noThisInStatic": "off"
+			},
+			"correctness": {
+				"useExhaustiveDependencies": "error",
+				"noUndeclaredVariables": "error",
+				"noUnusedVariables": "error"
+			},
+			"style": {
+				"useShorthandArrayType": "error",
+				"noRestrictedGlobals": "error"
+			},
+			"suspicious": {
+				"noConsoleLog": "off"
+			},
+			"performance": {
+				"noAccumulatingSpread": "error"
+			}
+		}
+	}
+}

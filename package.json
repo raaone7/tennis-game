@@ -1,0 +1,36 @@
+{
+	"name": "tennis-game",
+	"version": "1.0.0",
+	"description": "tennis game manager",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"lint": "biome check . --apply",
+		"format": "biome format . --write",
+		"fix": "pnpm format && pnpm lint",
+		"check": "biome ci .",
+		"typecheck": "tsc --noEmit -p tsconfig.build.json",
+		"build": "tsc -p tsconfig.build.json",
+		"dev": "tsx --env-file=.env src/index.ts",
+		"latest": "pnpm update --latest",
+		"test": "vitest run",
+		"test:ui": "vitest --ui"
+	},
+	"engines": {
+		"node": ">=20",
+		"pnpm": ">=8"
+	},
+	"volta": {
+		"node": "20.9.0",
+		"pnpm": "8.10.5"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.6.1",
+		"@types/node": "^20.11.30",
+		"@vitest/ui": "^1.4.0",
+		"tsx": "^4.7.1",
+		"typescript": "^5.4.3",
+		"vitest": "^1.4.0"
+	},
+	"license": "ISC"
+}
