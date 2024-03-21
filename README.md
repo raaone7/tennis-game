@@ -16,20 +16,35 @@ npm i pnpm -g
 
 1. Install dependencies
 
-    ```sh
+    ```
     pnpm i
+    ```
+    or
+    ```
+    npm install
     ```
 
 ## Steps to run and test
 
 1. To run a tennis match simulation
 
-    ```sh
+    ```
     pnpm dev
+    ```
+    or
+    ```
+    npm run dev
     ```
 
 2. To test the tennis match rules, for game, sets and match
 
-    ```sh
+    ```
     pnpm test
     ```
+    or
+    ```
+    npm run test
+    ```
+
+## Authors
+[Ram Subramanian](https://github.com/raaone7)
